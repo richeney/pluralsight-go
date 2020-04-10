@@ -1,3 +1,3 @@
-module github.com/richeney/pluralsight.com
+module github.com/richeney/pluralsight-go
 
 go 1.14
