@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"net/http"
+
+	"github.com/richeney/pluralsight-go/controllers"
+)
 
 func main() {
-	fmt.Println("Hello to me.")
+	controllers.RegisterControllers()
+	http.ListenAndServe(":3000", nil)
 }
