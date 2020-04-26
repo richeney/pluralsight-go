@@ -15,6 +15,7 @@ type userController struct {
 
 func (uc userController) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// .Write([]byte("Hello from the User Controller!"))
+	// That was the original line before we added in the switch
 
 	if r.URL.Path == "/users" {
 		switch r.Method {
